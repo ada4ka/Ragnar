@@ -1,0 +1,48 @@
+@import'/css/reset.css';
+:root{
+    --main-color:#1C2023;
+    --white:white;
+}
+body{
+    background: var(--main-color);
+}
+.page-wrapper {
+}
+.container {
+    margin-left: 159px;
+    margin-right: 150px;
+}
+.header {
+}
+.header-nav {
+}
+.header-nav-burger {
+}
+.nav-burger-line {
+}
+.header-nav-item {
+}
+.header-nav-item-li {
+}
+.header-release {
+}
+.header-realease-name {
+}
+.header-realease-time {
+}
+.realease-time-info {
+}
+.time-number {
+}
+.time-name {
+}
+.header-info {
+}
+.header-info-title {
+}
+.header-info-desk {
+}
+.header-info-buy {
+}
+.violet-btn {
+}
