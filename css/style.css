@@ -2,6 +2,10 @@
 :root{
     --main-color:#1C2023;
     --white:white;
+    --opasityWhite: rgba(255, 255, 255, 0.5);
+    --violet:#8856D9;
+    --seaColor: #A9C7C7;
+    --darkSeaColor:#8C96A0;
 }
 body{
     background: var(--main-color);
@@ -15,26 +19,62 @@ body{
 .header {
 }
 .header-nav {
+    display: flex;
+    padding-top: 46px;
+    align-items: center;
 }
 .header-nav-burger {
+    cursor: pointer;
+    margin-right: 50px;
 }
 .nav-burger-line {
+    height: 2px;
+    width: 25px;
+    background: var(--white);
+    margin-bottom: 5px;
+}
+.nav-burger-line:nth-child(2){
+width: 12.5px ;
 }
 .header-nav-item {
+    display: flex;
+    margin-right: 250px;
 }
 .header-nav-item-li {
+    margin-right: 30px;
+    color: var(--opasityWhite);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .6s;
+}
+.header-nav-item-li:hover {
+color: var(--violet);
+
+
 }
 .header-release {
+    display: flex;
+    align-items: center;
 }
 .header-realease-name {
+    color: var(--opasityWhite);
+    margin-right: 19px;
 }
 .header-realease-time {
+    display: flex;
+    column-gap: 6px;
 }
 .realease-time-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .time-number {
+    color: var(--seaColor);
+    font-size: 40px;
 }
 .time-name {
+    color: var(--darkSeaColor);
 }
 .header-info {
 }
