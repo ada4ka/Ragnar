@@ -17,6 +17,7 @@ body{
     margin-right: 150px;
 }
 .header {
+    background: url(/images/header-bg.png)no-repeat right/1200px 763px;
 }
 .header-nav {
     display: flex;
@@ -79,6 +80,7 @@ color: var(--violet);
 .header-info {
 }
 .header-info-title {
+    font-size: 100px;
 }
 .header-info-desk {
 }
