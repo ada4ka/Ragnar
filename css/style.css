@@ -6,6 +6,7 @@
     --violet:#8856D9;
     --seaColor: #A9C7C7;
     --darkSeaColor:#8C96A0;
+    --orange:#FF4136;
 }
 body{
     background: var(--main-color);
@@ -157,4 +158,52 @@ color: var(--violet);
 }
 .item-btn {
     align-self: flex-end;
+}
+.Controller {
+}
+.editions-title {
+}
+.Controller-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Controller-container-left {
+    
+
+}
+.Controller-description {
+    color: var(--seaColor);
+    margin-bottom: 22px;
+    font-size: 18px;
+}
+.Controller-container-left-cost {
+    display: flex;
+    justify-content: space-between;
+}
+.left-cost-price {
+    font-size: 30px;
+    font-weight: 900;
+}
+.left-cost-btn {
+    text-transform: uppercase;
+    background: var(--orange);
+    padding: 14px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.Controller-container-right {
+}
+.container-right-img {
+   
+}
+.violet{
+    color: var(--violet);
+    font-weight: 900;
+    
+}
+.orange{
+    color: var(--orange);
+    font-weight: 900;
 }
