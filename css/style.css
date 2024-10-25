@@ -207,3 +207,53 @@ color: var(--violet);
     color: var(--orange);
     font-weight: 900;
 }
+.trailer-title {
+}
+.trailer-main {
+    background: url(/images/bg-video.png)no-repeat center/cover;
+    padding-top: 457px;
+    padding-bottom: 447px;
+    width: 100vw;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+.traile-main-title {
+    font-weight:900;
+}
+.trailer-btn {
+    padding: 9px 26px;
+    background: #30373F;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+}
+.explore {
+}
+.explore-title {
+    text-align: center;
+}
+.explore-info {
+}
+.explore-info-card {
+}
+.explore-text {
+    text-align: center;
+}
+.info-card-data {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.card-data-character {
+}
+.card-data-desc {
+}
+.card-data-desc-item {
+    margin-top: 10px;
+}
+.text-violet {
+    color: var(--violet);
+}
