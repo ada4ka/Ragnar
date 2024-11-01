@@ -122,6 +122,7 @@ color: var(--violet);
     display: flex;
     justify-content: center;
     column-gap: 18px;
+
 }
 .editions-cards-item {
     background: color #191c1d;
@@ -208,16 +209,18 @@ color: var(--violet);
     font-weight: 900;
 }
 .trailer-title {
+    text-align: center;
+    margin-bottom: 31px;
 }
 .trailer-main {
     background: url(/images/bg-video.png)no-repeat center/cover;
     padding-top: 457px;
     padding-bottom: 447px;
-    width: 100vw;
    display: flex;
    justify-content: center;
    flex-direction: column;
    align-items: center;
+
 }
 .traile-main-title {
     font-weight:900;
@@ -233,6 +236,8 @@ color: var(--violet);
 }
 .explore-title {
     text-align: center;
+    margin-top: 78px;
+    margin-bottom: 32px;
 }
 .explore-info {
 }
@@ -240,16 +245,23 @@ color: var(--violet);
 }
 .explore-text {
     text-align: center;
+    margin-bottom: 20px;
 }
 .info-card-data {
     display: flex;
-    justify-content: space-between;
-    padding-left: 200px;
+    justify-content: center;
+    padding-left: 56px;
     padding-right: 200px;
+   
+
 }
 .card-data-character {
 }
 .card-data-desc {
+    position: relative;
+    z-index: 2;
+    
+
 }
 .card-data-desc-item {
     margin-top: 10px;
@@ -260,10 +272,29 @@ color: var(--violet);
 .card-btn{
     background: var(--orange);
     border-radius: 6px;
-  padding: 20px 7px ;
+  padding: 7px 20px ;
     cursor: pointer;
-    
+    position: absolute;
+    right: 39%;
+    margin-top: 250px;
+    right: 44.5%;
+    margin-top: 230px;
+
 }
 .input{
   
+}
+.first-card{
+    padding-left: 400px;
+}
+.second-card{
+    column-gap: 177px;
+
+}
+.first-img{
+    margin-right: 200px;
+}
+.second-card .card-btn{
+    right: 70.5%;
+    margin-top: 190px;
 }

@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -54,9 +58,10 @@
 
                 </div>
             </header>
+            </div>
             <div class="editions">
                 <h2 class="editions-title">Editions</h2>
-                <div class="div editions-card">
+                <div class="div editions-cards">
                     <div class="editions-cards-item">
                         <img src="/images/editions-card-1.png" alt="" class="item-photo">
                         <h4 class="item-version">Standard Edition</h4>
@@ -96,6 +101,7 @@
                 </div>
             </div>
             <div class="Controller">
+                <div class="container">
                 <h2 class="editions-title">DualSense</h2>
                 <div class="Controller-container">
                     <div class="Controller-container-left">
@@ -113,6 +119,7 @@
                     </div>
                 </div>
             </div>
+            </div>
             <div class="trailer">
                 <h2 class="trailer-title">About Game</h2>
                 <div class="trailer-main">
@@ -125,9 +132,9 @@
                 <div class="explore-info">
                     <div class="explore-info-card">
                         <p class="explore-text">Here are the God of War (PC) System Requirements</p>
-                        <input class="input" type="radio"Minimum Recommended >
-                        <div class="info-card-data">
-                            <img class="card-data-character" src="/images/bg-son.png" alt="">
+                        <!-- <input class="input" type="radio"Minimum Recommended > -->
+                        <div class="info-card-data first-card">
+                            <img class="card-data-character fisrst-img" src="/images/bg-son.png" alt="">
                             <ul class="card-data-desc">
                                 <li class="card-data-desc-item"><span class="text-violet">CPU</span> :Intel i5-2500k (4
                                     core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)
@@ -151,8 +158,8 @@
                             <button class="card-btn">BUY NOW</button>
                         </div>
                         <p class="explore-text">God of War for PS4</p>
-                        <div class="info-card-data">
-                            <input class="input" type="radio" Standard Limited  >
+                        <div class="info-card-data second-card">
+                            <!-- <input class="input" type="radio" Standard Limited  > -->
                             <ul class="card-data-desc">
                                 <li class="card-data-desc-item"><span class="text-violet">Platform</span>:PS4
                                 </li>
@@ -173,15 +180,78 @@
                             <img class="card-data-character" src="/images/bg-son.png" alt="">
                             <button class="card-btn">BUY NOW</button>
                         </div>
-                    </div>
-<h2 class="news" >NEWS</h2>
-<div class=""></div>
-<div class=""></div>
-<div class=""></div>
-<div class=""></div>
+                    </div> 
                 </div>
-            </div>
+                <div class="news">
+                    <h2 class="news-title"></h2>
+                    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"> 
+      <div class="slider-date">
+        <p class="slider-date-left violet">God of War Ragnarok </p>
+        <p class="slider-date-right">19/10/2022</p>
+      </div>
+      <div class="slider-card">
+        <img src="" alt="" class="slode-card-character">
+        <div class="slide-card-info">
+            <p class="slide-card-info-desc">God of War: Ragnarok is fast approaching. 
+                No wonder that we have been regularly receiving new information and materials related to the title in recent times. 
+                Last week, a trailer presenting the possibilities of the game on PlayStation 5 
+                hit the network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</p>
+            <button class="slider-card-info-read">read</button>
         </div>
+      </div>
+    </div>
+</div>
+<div class="swiper-slide"> 
+    <div class="slider-date">
+      <p class="slider-date-left violet">God of War Ragnarok </p>
+      <p class="slider-date-right">19/10/2022</p>
+    </div>
+    <div class="slider-card">
+      <img src="" alt="" class="slode-card-character">
+      <div class="slide-card-info">
+          <p class="slide-card-info-desc">God of War: Ragnarok is fast approaching. 
+              No wonder that we have been regularly receiving new information and materials related to the title in recent times. 
+              Last week, a trailer presenting the possibilities of the game on PlayStation 5 
+              hit the network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</p>
+          <button class="slider-card-info-read">read</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="swiper-slide"> 
+    <div class="slider-date">
+      <p class="slider-date-left violet">God of War Ragnarok </p>
+      <p class="slider-date-right">19/10/2022</p>
+    </div>
+    <div class="slider-card">
+      <img src="" alt="" class="slode-card-character">
+      <div class="slide-card-info">
+          <p class="slide-card-info-desc">God of War: Ragnarok is fast approaching. 
+              No wonder that we have been regularly receiving new information and materials related to the title in recent times. 
+              Last week, a trailer presenting the possibilities of the game on PlayStation 5 
+              hit the network , and a little earlier we learned that the work on the production was completed . Meanwhile, it turns out that the upcoming sequel to the adventures of Kratos and Atreus will receive a major update on release.</p>
+          <button class="slider-card-info-read">read</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+  </div>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="/script.js" ></script>
 </body>
+
 
 </html>
