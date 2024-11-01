@@ -257,3 +257,13 @@ color: var(--violet);
 .text-violet {
     color: var(--violet);
 }
+.card-btn{
+    background: var(--orange);
+    border-radius: 6px;
+  padding: 20px 7px ;
+    cursor: pointer;
+    
+}
+.input{
+  
+}
