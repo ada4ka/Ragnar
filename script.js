@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-  
+  slidesPerView: 3,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
