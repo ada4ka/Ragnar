@@ -398,3 +398,52 @@ color: var(--violet);
   color: white;
 margin-bottom: 32px;
 }
+.footer-wrapper {
+}
+.container {
+}
+.footer {
+}
+.footer-top {
+}
+.footer-nav-item {
+}
+.footer-nav-item-li {
+    text-transform: uppercase;
+    color: var(--darkSeaColor);
+    align-items: center;
+   
+}
+.header-nav-item-li {
+}
+.footer-top-launguage {
+  justify-content: space-between;
+}
+.footer-top-english {
+    color: var(--darkSeaColor);
+}
+.footer-text {
+    color: var(--darkSeaColor);
+    margin-top: 50px;
+    text-align: center;
+}
+.footer-span {
+    color: var(--darkSeaColor);
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.text{
+    color: var(--darkSeaColor);
+    align-items: center;
+    margin-top: 13px;
+    
+
+    
+}
+.footer-violet {
+    color: var(--violet);
+}
+.img-footer{
+    
+}
