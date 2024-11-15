@@ -158,8 +158,13 @@ color: var(--violet);
 }
 .item-btn {
     align-self: flex-end;
+    background: var(--violet);
+    border-radius: 6px;
+padding: 7px;
 }
 .Controller {
+    position: relative;
+    z-index: 3;
 }
 .editions-title {
 }
@@ -196,6 +201,12 @@ color: var(--violet);
 .Controller-container-right {
 }
 .container-right-img {
+    position: absolute;
+    right: 10%;
+    animation: controller 4s infinite;
+    top: 18%;
+    height: 250px;
+    
    
 }
 .violet{
@@ -469,4 +480,16 @@ margin-bottom: 32px;
      justify-content: center;
      flex-direction: column;
      /* для того что бы было по вертекали */
+}
+
+@keyframes controller {
+0%{
+    margin-top: 0px;
+}
+50%{
+    margin-top: -50px;
+}
+100%{
+    margin-top: 0px;
+}
 }
