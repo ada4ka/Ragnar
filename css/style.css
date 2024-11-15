@@ -405,8 +405,15 @@ margin-bottom: 32px;
 .footer {
 }
 .footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+
 }
 .footer-nav-item {
+    display: flex;
+    column-gap: 22px;
 }
 .footer-nav-item-li {
     text-transform: uppercase;
@@ -417,10 +424,12 @@ margin-bottom: 32px;
 .header-nav-item-li {
 }
 .footer-top-launguage {
-  justify-content: space-between;
+  font-weight: 900;
+
 }
 .footer-top-english {
     color: var(--darkSeaColor);
+
 }
 .footer-text {
     color: var(--darkSeaColor);
@@ -431,12 +440,15 @@ margin-bottom: 32px;
     color: var(--darkSeaColor);
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 13px;
     
 }
-.text{
+.footer-bottom-text{
     color: var(--darkSeaColor);
     align-items: center;
     margin-top: 13px;
+    text-align: center;
+
     
 
     
@@ -445,5 +457,16 @@ margin-bottom: 32px;
     color: var(--violet);
 }
 .img-footer{
+    width: 46px;
+    height: 35px;
+    margin: 0 auto;
     
+}
+.footer-center{
+    margin: 0 auto; 
+     /* 0 авто помогает расположить по центру */
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     /* для того что бы было по вертекали */
 }
