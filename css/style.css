@@ -366,6 +366,7 @@ padding: 7px;
 .faq-card {
     width: 900px;
     margin: 0 auto 31px;
+    margin-top: 50px;
     
 }
 .faq-top {
@@ -385,6 +386,7 @@ padding: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .faq-line {
     background: var(--violet);
@@ -398,6 +400,7 @@ padding: 7px;
     opacity: 0;
     position: absolute;
     transition: all .9s;
+    width: 900px;
 }
 .active-faq{
     position: relative;

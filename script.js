@@ -1,9 +1,15 @@
 const navItem = document.querySelector('.header-nav-item')
 const burgerMenu = document.querySelector('.header-nav-burger')
 const navBurgerLine = document.querySelectorAll('.nav-burger-line')
+const buttons = document.querySelectorAll('.faq-card-openClose')
 
 let count = 1
-
+buttons.forEach(function(element){
+  element.addEventListener('click',function(){
+    element.parentElement.nextElementSibling.nextElementSibling.classList.toggle('active-faq')
+    // тогл добовляет класс если его нет и убирает если есть
+  })
+})
 burgerMenu.addEventListener('click',function(){
     count++
     if(count % 2 == 0){
