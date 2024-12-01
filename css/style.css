@@ -7,7 +7,15 @@
     --seaColor: #A9C7C7;
     --darkSeaColor:#8C96A0;
     --orange:#FF4136;
-    --
+    --input-bg:#30373F;
+    --close-btn:#D9D9D9
+    
+}
+input:focus-visible{
+outline:var(--input-bg)
+}
+input{
+    border: none;
 }
 body{
     background: var(--main-color);
@@ -160,6 +168,7 @@ color: var(--violet);
     align-self: flex-end;
     font-weight: 900;
     font-size: 18px;
+    margin-bottom: 14px;
 }
 .item-btn {
     align-self: flex-end;
@@ -501,12 +510,37 @@ margin-bottom: 32px;
     margin-top: 0px;
 }
 }
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+.open-modal{
+    display: block;
+}
 .modal{
     width: 470px;
     position: fixed;
     top: 50%;
     right: 50%;
     transform: translate(50%,-50%);
+    background: url(/images/bg-modal-kratos.png) no-repeat center/cover;
+padding: 32px 32px 16px 32px;
+border-radius: 12px;
+z-index: 10;
+}
+.close-modal{
+    position:absolute ;
+    color: var(--close-btn);
+    right: 12px;
+    top: 6px;
+    font-size: 20px;
+    cursor: pointer;
 }
 .modal-title {
 }
@@ -516,39 +550,101 @@ margin-bottom: 32px;
     align-items: center;
     color: var(--violet);
 }
+.modal input{background: var(--input-bg);
+    margin-bottom: 16px;
+    padding: 16px 0px 16px 14px;
+    border-radius: 6px;
+    color: white;
+}
 .modal-title-second {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .modal-form {
+    display: flex;
+    flex-direction: column;
 }
+
+
 .modal-form-label {
+    margin-bottom: 8px;
 }
 .modal-form-expire {
+    display: flex;
+    justify-content: space-between;
+
 }
 .form-expire-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    /* промежуток */
+    width: 190px;
 }
 .label-date {
 }
 .form-expire-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    width: 190px;
 }
 .label-cvv {
 }
 .modal-form-instant {
+    margin-bottom: 7px;
 }
-.modal-agree {
+.modal-agree  {
+    /* пробелы нужны потому что у инпутов нет класса мы через когото обращаемся к инпуту */
+display: flex;
+align-items: center;
+justify-content: flex-start;
+margin-bottom: 8px;
+text-transform: uppercase;
+}
+.modal-agree input{
+    margin-bottom: 0px;
+    font-size: 12px;
+    margin-right: 12px;
+   
+
 }
 .agree-red {
+    color: var(--orange);
+    text-decoration: underline;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 .modal-text {
+    font-size: 10px;
 }
 .modal-summa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-top: 12px;
 }
 .modal-balance {
+    font-size: 14px;
+}
+.modal-balance:last-child{
+    font-size: 20px;
 }
 .modal-button {
+    cursor: pointer;
+    font-size: 15px;
+    background: var(--violet);
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
 }
-input{
-    background: var(--);
+.madal label{
+    font-size: 10px;
+    color: var(--white);
+    text-transform: uppercase;
+
 }
+

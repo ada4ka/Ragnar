@@ -13,4 +13,6 @@ a{
 button{
     background: unset;
     border: none;
+    cursor: pointer;
 }
+

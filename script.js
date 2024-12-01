@@ -2,7 +2,17 @@ const navItem = document.querySelector('.header-nav-item')
 const burgerMenu = document.querySelector('.header-nav-burger')
 const navBurgerLine = document.querySelectorAll('.nav-burger-line')
 const buttons = document.querySelectorAll('.faq-card-openClose')
-
+const buttonsModal = document.querySelectorAll('.item-btn')
+const overlay = document.querySelector('.overlay')
+const closeModal = document.querySelector('.close-modal')
+closeModal.addEventListener('click',function(){
+  overlay.classList.remove('open-modal')
+})
+buttonsModal.forEach(function(element){
+  element.addEventListener('click',function(){
+overlay.classList.add('open-modal')
+  })
+})
 let count = 1
 buttons.forEach(function(element){
   element.addEventListener('click',function(){
