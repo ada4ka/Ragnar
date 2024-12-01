@@ -7,6 +7,7 @@
     --seaColor: #A9C7C7;
     --darkSeaColor:#8C96A0;
     --orange:#FF4136;
+    --
 }
 body{
     background: var(--main-color);
@@ -499,4 +500,55 @@ margin-bottom: 32px;
 100%{
     margin-top: 0px;
 }
+}
+.modal{
+    width: 470px;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+.modal-title {
+}
+.modal-title-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--violet);
+}
+.modal-title-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-form {
+}
+.modal-form-label {
+}
+.modal-form-expire {
+}
+.form-expire-left {
+}
+.label-date {
+}
+.form-expire-right {
+}
+.label-cvv {
+}
+.modal-form-instant {
+}
+.modal-agree {
+}
+.agree-red {
+}
+.modal-text {
+}
+.modal-summa {
+}
+.modal-balance {
+}
+.modal-button {
+}
+input{
+    background: var(--);
 }
