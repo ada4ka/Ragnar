@@ -6,7 +6,29 @@ const buttonsModal = document.querySelectorAll('.item-btn')
 const overlay = document.querySelector('.overlay')
 const closeModal = document.querySelector('.close-modal')
 const modalPrice = document.querySelector('.modal-price')
-console.log(modalPrice)
+const cardData = document.querySelectorAll('.card-data-desc-item')
+const cardDataFirst=[`Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)`,`8 GB`,`Windows 10 64-bit`,`NVIDIA GTX`,`5.1`,`5.1`,`70 GB`,`4
+GB`]
+const cardDataFirstHidden = [
+  `Intel i7-12700K (12 core 3.6 GHz) or AMD Ryzen 7 5800X (8 core 3.8 GHz)`,
+  `16 GB`,
+  `Windows 10/11 64-bit`,
+  `NVIDIA RTX 3060`,
+  `7.1`,
+  `7.1`,
+  `100 GB`,
+  `8 GB`
+];
+const cardDataTwo = document.querySelectorAll('.card-data-desc-item-two')
+const carddataTwo =[ `PS4`,`20.4.2018`,` Sony Interactive Entertainment Europe`,`>Action, Adventure`,`English, Polish, Russian`,`English, Dutch, Polish, Russian, Turkish`]
+const carddataTwoHidden = [
+  `PS5`,
+  `19.11.2020`,
+  `Sony Interactive Entertainment`,
+  `>Action, Adventure, RPG`,
+  `English, Polish, Russian, Japanese`,
+  `English, Dutch, Polish, Russian, Turkish, German`
+];
 closeModal.addEventListener('click',function(){
   overlay.classList.remove('open-modal')
 })

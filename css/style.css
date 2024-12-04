@@ -270,6 +270,87 @@ padding: 7px;
     text-align: center;
     margin-bottom: 20px;
 }
+/* Общий стиль контейнера */
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 42%;
+  }
+  
+  /* Лейблы */
+  .label {
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .minimum {
+    color: #ffffff; /* Активный лейбл */
+  }
+  
+  .recommended {
+    color: #6c6c6c; /* Неактивный лейбл */
+  }
+  
+  /* Стили переключателя */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  
+  /* Слайдер */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: #8e44ad; /* Фиолетовый кружок */
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Состояние "включено" */
+  input:checked + .slider {
+    background-color: #3a3a3c;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px); /* Перемещение кружка */
+  }
+  
+  /* Активация текста при переключении */
+  input:checked ~ .recommended {
+    color: #ffffff;
+  }
+  
+  input:checked ~ .minimum {
+    color: #6c6c6c;
+  }
+  
 .info-card-data {
     display: flex;
     justify-content: center;
