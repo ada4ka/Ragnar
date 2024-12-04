@@ -5,6 +5,8 @@ const buttons = document.querySelectorAll('.faq-card-openClose')
 const buttonsModal = document.querySelectorAll('.item-btn')
 const overlay = document.querySelector('.overlay')
 const closeModal = document.querySelector('.close-modal')
+const modalPrice = document.querySelector('.modal-price')
+console.log(modalPrice)
 closeModal.addEventListener('click',function(){
   overlay.classList.remove('open-modal')
 })
@@ -17,6 +19,8 @@ let count = 1
 buttons.forEach(function(element){
   element.addEventListener('click',function(){
     element.parentElement.nextElementSibling.nextElementSibling.classList.toggle('active-faq')
+    modalPrice.textContent = element.previousElementSibling.lastElementChild.textContent
+    
     // тогл добовляет класс если его нет и убирает если есть
   })
 })
