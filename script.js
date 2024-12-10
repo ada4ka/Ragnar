@@ -29,6 +29,13 @@ const carddataTwoHidden = [
   `English, Polish, Russian, Japanese`,
   `English, Dutch, Polish, Russian, Turkish, German`
 ];
+const switchOne = document.querySelector('.switch-one')
+const switchTwo = document.querySelector('.switch-two')
+switchOne.addEventListener('click',function(){
+  cardData.forEach(function(element,index){
+    element.textContent  = cardDataFirstHidden[index]
+  })
+})
 closeModal.addEventListener('click',function(){
   overlay.classList.remove('open-modal')
 })
