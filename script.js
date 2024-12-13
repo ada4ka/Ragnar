@@ -6,7 +6,7 @@ const buttonsModal = document.querySelectorAll('.item-btn')
 const overlay = document.querySelector('.overlay')
 const closeModal = document.querySelector('.close-modal')
 const modalPrice = document.querySelector('.modal-price')
-const cardData = document.querySelectorAll('.card-data-desc-item')
+const cardData = document.querySelectorAll('.deck-item-text')
 const cardDataFirst=[`Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)`,`8 GB`,`Windows 10 64-bit`,`NVIDIA GTX`,`5.1`,`5.1`,`70 GB`,`4
 GB`]
 const cardDataFirstHidden = [
@@ -19,7 +19,7 @@ const cardDataFirstHidden = [
   `100 GB`,
   `8 GB`
 ];
-const cardDataTwo = document.querySelectorAll('.card-data-desc-item-two')
+const cardDataTwo = document.querySelectorAll('.deck-item-two')
 const carddataTwo =[ `PS4`,`20.4.2018`,` Sony Interactive Entertainment Europe`,`>Action, Adventure`,`English, Polish, Russian`,`English, Dutch, Polish, Russian, Turkish`]
 const carddataTwoHidden = [
   `PS5`,
@@ -31,11 +31,36 @@ const carddataTwoHidden = [
 ];
 const switchOne = document.querySelector('.switch-one')
 const switchTwo = document.querySelector('.switch-two')
+let countOne = 1
+
 switchOne.addEventListener('click',function(){
-  cardData.forEach(function(element,index){
-    element.textContent  = cardDataFirstHidden[index]
+  countOne++
+    if(countOne % 2 == 0){
+      cardData.forEach(function(element,index){
+        element.textContent  = cardDataFirstHidden[index]
+      })
+    } else{
+      cardData.forEach(function(element,index){
+        element.textContent  = cardDataFirst[index]
+      })
+    }
   })
-})
+
+  let countTwo = 1
+
+switchTwo.addEventListener('click',function(){
+  countTwo++
+    if(countTwo % 2 == 0){
+      cardDataTwo.forEach(function(element,index){
+        element.textContent  =  carddataTwoHidden[index]
+      })
+    } else{
+      cardDataTwo.forEach(function(element,index){
+        element.textContent  = carddataTwo[index]
+      })
+    }
+  })
+
 closeModal.addEventListener('click',function(){
   overlay.classList.remove('open-modal')
 })
