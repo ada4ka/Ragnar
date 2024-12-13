@@ -107,7 +107,7 @@ burgerMenu.addEventListener('click',function(){
     }
 })
 document.querySelector('.trailer-btn').addEventListener('click', function() {
-  const trailerDiv = document.querySelector('.trailer');
+  const trailerDiv = document.querySelector('.trailer-main');
   const trailerVideo = document.getElementById('trailerVideo');
 
   // Заменили фон на видео и показали его
