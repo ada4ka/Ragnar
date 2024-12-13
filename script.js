@@ -106,10 +106,15 @@ burgerMenu.addEventListener('click',function(){
     })
     }
 })
-for (let index = 0; index < 10; index++) {
-  console.log(index)
-  
-}
+document.querySelector('.trailer-btn').addEventListener('click', function() {
+  const trailerDiv = document.querySelector('.trailer');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  // Заменили фон на видео и показали его
+  trailerDiv.style.background = 'none'; // убираем фон
+  trailerVideo.style.display = 'block'; // показываем видео
+  trailerVideo.play(); // запускаем видео
+});
 
 
 
