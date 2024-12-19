@@ -573,11 +573,9 @@ margin-bottom: 32px;
 }
 .footer-center{
     margin: 0 auto; 
-     /* 0 авто помогает расположить по центру */
      display: flex;
      justify-content: center;
      flex-direction: column;
-     /* для того что бы было по вертекали */
 }
 
 @keyframes controller {
@@ -730,13 +728,13 @@ text-transform: uppercase;
 }
 .trailer {
     width: 100vw;
-    height: 1000px; /* задайте нужную высоту */
+    height: 1000px; 
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background 0.5s ease; /* плавный переход */
+    transition: background 0.5s ease; 
 }
 .trailer video {
     width: 100vw;

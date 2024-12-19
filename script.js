@@ -67,6 +67,7 @@ closeModal.addEventListener('click',function(){
 buttonsModal.forEach(function(element){
   element.addEventListener('click',function(){
 overlay.classList.add('open-modal')
+modalPrice.textContent = element.previousElementSibling.textContent
   })
 })
 let count = 1
@@ -110,48 +111,31 @@ document.querySelector('.trailer-btn').addEventListener('click', function() {
   const trailerDiv = document.querySelector('.trailer-main');
   const trailerVideo = document.getElementById('trailerVideo');
 
-  // Заменили фон на видео и показали его
-  trailerDiv.style.background = 'none'; // убираем фон
-  trailerVideo.style.display = 'block'; // показываем видео
-  trailerVideo.play(); // запускаем видео
+  
+  trailerDiv.style.background = 'none';
+  trailerVideo.style.display = 'block'; 
+  trailerVideo.play(); 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let time = 10;  
+const timer = setInterval(() => {
+  document.querySelectorAll('.time-number').textContent = time <= 0 ? clearInterval(timer) : time--;  
+}, 1000 );  
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
   slidesPerView: 3,
-    // If we need pagination
+   
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
   });
+  
